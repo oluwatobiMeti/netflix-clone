@@ -8,7 +8,7 @@ import requests from './Request';
 export default function Home() {
   const [movie, setMovie] = useState([]);
   const [MovieId, setMovieId] = useState(0);
-  const [fetchUrl, setFetchUrl] = useState(requests.fetchNetflixOriginals)
+  const [fetchUrl, setFetchUrl] = useState(requests.fetchNetflixOriginals);
   useEffect(() => {
     async function fetchData() {
       const request = await instance.get(fetchUrl);

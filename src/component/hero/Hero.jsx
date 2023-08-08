@@ -12,12 +12,13 @@ function Hero() {
     const style = {
         backgroundSize: "cover",
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path})`,
-        backgroundPosition: "center center"
+        backgroundPosition: "center center",
+        width: "100vw"
     }
   return (
     <header className='banner' style={style}>
       <div className="banner__content">
-        <h1 className="banner__title">{movie?.name}</h1>
+        <h1 className="banner__title">{movie?.name || movie?.original_title}</h1>
         <div className="banner__btns">
           <button className="banner__btn">play</button>
           <button className="banner__btn">playList</button>

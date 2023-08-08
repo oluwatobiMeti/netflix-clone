@@ -9,6 +9,7 @@
     margin-left: 30px;
     padding-top: 140px;
     height: 190px;
+    margin-left: 4rem;
 }
 .banner__title {
     font-size: 3rem;
@@ -24,7 +25,7 @@
     height: 80px;
     color: white;
     text-align: start;
-    margin: auto;
+    margin-left: 4rem;
 }
 .banner--fadeButton {
     height: 7.4rem;
@@ -38,11 +39,36 @@
     font-weight: 700;
     border-radius: 0.2vw;
     padding: 0.5rem 2rem;
-    margin-right: 1rem;
+    margin-right: 4rem;
     background-color: rgba(51, 51, 51, 0.5);
 }
 .banner__btn:hover {
     color: #111;
     background-color: #fff;
     transition: all .5s;
+}
+.banner__btns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 80rem) {
+    .banner__title {
+        text-align: center;
+    }
+
+    .banner__content {
+        padding-top: 140px;
+        height: 190px;
+        margin: auto;
+    }
+    .banner__description {
+        text-align: center;
+        margin: auto;
+        font-size: 10px;
+        width: 70vw;
+    }
+    .banner__btn {
+        margin: 0 1rem;
+    }
 }
